@@ -1,5 +1,7 @@
 import React, { useState } from "react"
+import {notification} from 'antd';
 import { Form, Input, H2, TextArea, Boton } from "./styles"
+import {sendMailApi} from '../../api/sendmail';//api para enviar el mail
 
 const Fomulario = () => {
   const [nombre, setNombre] = useState("")
@@ -8,17 +10,43 @@ const Fomulario = () => {
   const [mensaje, setMensaje] = useState("")
 
   const onSubmit = e => {
-    e.preventDefault()
-    console.log("Hola mundo")
-    // Ya tinen validacion los formularios asique no hace mucha falta
-    // Faltaria hacer la coneccion al backend y que se envien los datos
+    e.preventDefault();
+    const emailValidation=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; //esto es para validar el email...
+    const resultValidation= emailValidation.test(email);
 
-    // reiniciar formulario
-    setNombre("")
-    setTelefono("")
-    setEmail("")
-    setMensaje("")
-  }
+    if(!email || !nombre || !telefono || !mensaje){
+      //fijate de ponerle algun feedback al cliente, un mensaje... le agregaria algo pero no maneje tanto styled component
+      console.log('los campos deben estar llenos')
+    }else if(!resultValidation){
+      console.log('el email es invalido');
+    }else{
+      sendMailApi(nombre,telefono,email,mensaje)
+      .then(response=>{
+        
+        if(response.code !== 200){
+          notification['warning']({
+            message:response.message
+          })
+        }else{
+          notification['success']({
+            message:response.message
+          });//aca hay que ponerle algun mensaje para que lo visualice el cliente
+          // reiniciar formulario
+          setNombre("");
+          setTelefono("");
+          setEmail("");
+          setMensaje("");
+        }
+        
+      }).catch(error=>{
+          notification['error']({
+            message:error.message
+          });
+      });
+    }
+    // Ya tinen validacion los formularios asique no hace mucha falta
+    // Faltaria hacer la coneccion al backend y que se envien los datos 
+}
   return (
     <>
       <div>

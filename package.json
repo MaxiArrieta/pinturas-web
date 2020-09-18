@@ -5,6 +5,7 @@
     "version": "0.1.0",
     "author": "Maximiliano Arrieta arrieta.maxi18@gmail.com",
     "dependencies": {
+        "antd": "^3.23.2",
         "babel-plugin-styled-components": "^1.11.1",
         "gatsby": "^2.24.26",
         "gatsby-background-image": "^1.1.1",
