@@ -19,9 +19,7 @@ export const Link = styled(LinkScroll)`
   &:last-of-type {
     margin-right: 0;
   }
-  /* &.pagina-actual {
-    border-bottom: 2px solid #fff;
-  } */
+
   &:hover {
     box-shadow: inset 0 0 20px rgb(249, 231, 159, 0.5),
       0 0 20px rgba(249, 231, 159, 0.4);

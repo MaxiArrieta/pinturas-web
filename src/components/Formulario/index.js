@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Form, Input, H2, TextArea, Boton } from "./styles"
-import {sendMailApi} from '../../api/sendmail';//api para enviar el mail
+import { sendMailApi } from "../../api/sendmail" //api para enviar el mail
 
 const Fomulario = () => {
   const [nombre, setNombre] = useState("")
@@ -8,38 +8,50 @@ const Fomulario = () => {
   const [email, setEmail] = useState("")
   const [mensaje, setMensaje] = useState("")
 
-  const onSubmit = e => {
-    e.preventDefault();
-    const emailValidation=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/; //esto es para validar el email...
-    const resultValidation= emailValidation.test(email);
+  // if (!email || !nombre || !telefono || !mensaje)
+  const onSubmit = async e => {
+    e.preventDefault()
+    const emailValidation = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/ //esto es para validar el email...
+    const resultValidation = emailValidation.test(email)
 
-    if(!email || !nombre || !telefono || !mensaje){
-      //fijate de ponerle algun feedback al cliente, un mensaje... le agregaria algo pero no maneje tanto styled component
-      console.log('los campos deben estar llenos')
-    }else if(!resultValidation){
-      console.log('el email es invalido');
-    }else{
-      sendMailApi(nombre,telefono,email,mensaje)
-      .then(response=>{
-        
-        if(response.code !== 200){
-          console.log(response.message);
-        }else{
-          console.log(response.message);//aca hay que ponerle algun mensaje para que lo visualice el cliente
-          // reiniciar formulario
-          setNombre("");
-          setTelefono("");
-          setEmail("");
-          setMensaje("");
-        }
-        
-      }).catch(error=>{
-          console.log(error.message);
-      });
+    // El .trim() lo que hace es quitar todos los espacios y si es vacio
+    // muestra el mensaje
+    if (
+      email.trim() === "" ||
+      nombre.trim() === "" ||
+      telefono.length < 8 ||
+      mensaje.trim() === ""
+    ) {
+      //fijate de ponerle algun feedback al cliente, un mensaje...
+      //le agregaria algo pero no maneje tanto styled component
+
+      // Lo que hace styled component es darle estilos a las estiquetas
+      // podes agregar las cosas despues yo lo doy los estilos
+      alert("Todos los campos deben estar llenos")
+    } else if (!resultValidation) {
+      alert("El email es invalido")
+    } else {
+      await sendMailApi(nombre, telefono, email, mensaje)
+        .then(response => {
+          if (response.code !== 200) {
+            alert("Hubo un error intente mas tarde")
+            console.log(response.message)
+          } else {
+            alert("Se envio el mensaje correctamente")
+            console.log(response.message)
+            //aca hay que ponerle algun mensaje para que lo visualice el cliente
+            // reiniciar formulario
+            setNombre("")
+            setTelefono("")
+            setEmail("")
+            setMensaje("")
+          }
+        })
+        .catch(error => {
+          console.log(error.message)
+        })
     }
-    // Ya tinen validacion los formularios asique no hace mucha falta
-    // Faltaria hacer la coneccion al backend y que se envien los datos 
-}
+  }
   return (
     <>
       <div>

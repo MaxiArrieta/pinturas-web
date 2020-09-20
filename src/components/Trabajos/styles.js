@@ -7,9 +7,8 @@ export const Div = styled.div`
   margin: 4rem auto 0 auto;
 
   @media (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
+    justify-content: center;
+    width: 50%;
   }
 `
 export const DivImagen = styled.div`
