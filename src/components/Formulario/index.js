@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import { Form, Input, H2, TextArea, Boton } from "./styles"
+import Toast from 'react-bootstrap/Toast'//toast para poner de feedback
+import ToastHeader from 'react-bootstrap/ToastHeader'//toast para poner de feedback
+import ToastBody from 'react-bootstrap/ToastBody'//toast para poner de feedback
 import {sendMailApi} from '../../api/sendmail';//api para enviar el mail
 
 const Fomulario = () => {
@@ -15,9 +18,9 @@ const Fomulario = () => {
 
     if(!email || !nombre || !telefono || !mensaje){
       //fijate de ponerle algun feedback al cliente, un mensaje... le agregaria algo pero no maneje tanto styled component
-      console.log('los campos deben estar llenos')
+     console.log('Completa los campos');
     }else if(!resultValidation){
-      console.log('el email es invalido');
+      
     }else{
       sendMailApi(nombre,telefono,email,mensaje)
       .then(response=>{
@@ -107,3 +110,11 @@ const Fomulario = () => {
 }
 
 export default Fomulario
+
+
+/* FALTA:
+ACOMODAR , CENTRALIZAR EL CARRUSEL,
+PONER ESE FEEDBACK PARA QUE LE INFORME AL USUARIO QUE SE ENVIO EL MAIL,
+Y FIJAR EL MENUTOP
+Y COLOCAR EL CAPTCHA
+ */
