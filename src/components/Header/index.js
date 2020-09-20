@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, Div, Link } from "./styles"
+import { Navbar, Div, Link, H1 } from "./styles"
 import Navegacion from "../Nav"
 
 const Header = () => (
@@ -12,7 +12,7 @@ const Header = () => (
   >
     <Div>
       <Link to={"home"} smooth duration={1000}>
-        <h1>Pinturas pablo</h1>
+        <H1>Pinturas pablo</H1>
       </Link>
       <Navegacion />
     </Div>

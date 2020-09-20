@@ -36,4 +36,10 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 15px;
         font-family: "Bitter", serif;
     }
+    a{
+        text-decoration: none;
+        text-decoration-line: #fff;
+        color: #fff;
+
+    }
 `

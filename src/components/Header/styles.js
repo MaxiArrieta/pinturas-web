@@ -26,3 +26,8 @@ export const Link = styled(LinkScroll)`
   color: white;
   text-decoration: none;
 `
+
+export const H1 = styled.h1`
+  font-size: 3rem;
+  color: #fff;
+`
