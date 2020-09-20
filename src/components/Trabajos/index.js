@@ -13,16 +13,18 @@ const Trabajos = () => {
       </Fade>
 
       <Div>
-        <Carousel>
-          {/*aplicamos el carrusel, lo que va a envolver, y luego
+        <Fade left duration={1000} delay={500} distance="30px">
+          <Carousel>
+            {/*aplicamos el carrusel, lo que va a envolver, y luego
            aplicamos un metodo un metodo para que muestre cada foto como un item*/}
-          <Carousel.Item>
-            <Images titulo="Antes" name="antes" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <Images titulo="Despues" name="despues" />
-          </Carousel.Item>
-        </Carousel>
+            <Carousel.Item>
+              <Images titulo="Antes" name="antes" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <Images titulo="Despues" name="despues" />
+            </Carousel.Item>
+          </Carousel>
+        </Fade>
       </Div>
     </section>
   )

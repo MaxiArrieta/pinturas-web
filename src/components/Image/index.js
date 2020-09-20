@@ -18,7 +18,7 @@ const Image = () => {
 
   const img = image.sharp.fluid
   return (
-    <>
+    <section id="home">
       <ImageBackground tag="section" fluid={img} fadeIn="soft">
         <TextoImagen>
           <Fade left duration={1000} delay={500} distance="30px">
@@ -30,7 +30,7 @@ const Image = () => {
           </Fade>
         </TextoImagen>
       </ImageBackground>
-    </>
+    </section>
   )
 }
 

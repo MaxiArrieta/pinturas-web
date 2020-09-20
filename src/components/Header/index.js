@@ -3,9 +3,15 @@ import { Navbar, Div, Link } from "./styles"
 import Navegacion from "../Nav"
 
 const Header = () => (
-  <Navbar id="home">
+  <Navbar
+    style={{
+      background: "#6c3483",
+      // justify-content: "space-between",
+      padding: "1rem",
+    }}
+  >
     <Div>
-      <Link to="/">
+      <Link to={"home"} smooth duration={1000}>
         <h1>Pinturas pablo</h1>
       </Link>
       <Navegacion />
