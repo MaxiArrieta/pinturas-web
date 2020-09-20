@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import {notification} from 'antd';
 import { Form, Input, H2, TextArea, Boton } from "./styles"
 import {sendMailApi} from '../../api/sendmail';//api para enviar el mail
 
@@ -24,13 +23,9 @@ const Fomulario = () => {
       .then(response=>{
         
         if(response.code !== 200){
-          notification['warning']({
-            message:response.message
-          })
+          console.log(response.message);
         }else{
-          notification['success']({
-            message:response.message
-          });//aca hay que ponerle algun mensaje para que lo visualice el cliente
+          console.log(response.message);//aca hay que ponerle algun mensaje para que lo visualice el cliente
           // reiniciar formulario
           setNombre("");
           setTelefono("");
@@ -39,9 +34,7 @@ const Fomulario = () => {
         }
         
       }).catch(error=>{
-          notification['error']({
-            message:error.message
-          });
+          console.log(error.message);
       });
     }
     // Ya tinen validacion los formularios asique no hace mucha falta
