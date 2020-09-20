@@ -8,6 +8,9 @@ const Navegacion = () => {
       <Link to={"nosotros"} smooth duration={1000}>
         Nosotros
       </Link>
+      <Link to={"trabajos"} smooth duration={1000}>
+        Trabajos
+      </Link>
       <Link to={"contacto"} smooth duration={1000}>
         Contacto
       </Link>
