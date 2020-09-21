@@ -39,3 +39,7 @@ export const Link = styled(LinkScroll)`
     /* border-shadow: 20px; */
   }
 `
+export const Span = styled.span`
+  color: #fff;
+  text-decoration: none;
+`

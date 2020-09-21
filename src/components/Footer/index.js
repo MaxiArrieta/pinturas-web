@@ -1,13 +1,13 @@
 import React from "react"
-import { Container, Link } from "./styles"
+import { Container, Link, Span } from "./styles"
 
 const Footer = () => {
   return (
     <Container>
       <Link to={"home"} smooth duration={1000}>
-        Subir
+        <Span>Subir</Span>
       </Link>
-      <p>Copyright © {new Date().getFullYear()} -Maximiliano Arrieta</p>
+      <p>Copyright © {new Date().getFullYear()} - By Maximiliano Arrieta</p>
       <p>Todos los derechos reservados.</p>
     </Container>
   )
