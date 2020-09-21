@@ -12,7 +12,7 @@ const Header = () => (
   >
     <Div>
       <Link to={"home"} smooth duration={1000}>
-        <H1>Pinturas pablo</H1>
+        <H1>Pinturas Pablo</H1>
       </Link>
       <Navegacion />
     </Div>

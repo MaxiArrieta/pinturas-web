@@ -20,6 +20,7 @@ export const Contenido = styled.main`
   }
   h2 {
     text-align: center;
+    font-size: 2.8rem;
   }
   p {
     line-height: 2;
