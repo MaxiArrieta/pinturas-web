@@ -1,18 +1,18 @@
 import React from "react"
-import { Nav, Link } from "./styles"
+import { Nav, Link, Span } from "./styles"
 
 const Navegacion = () => {
   return (
     <Nav>
       {/* <Link to={"home"}>Inicio</Link> */}
       <Link to={"nosotros"} smooth duration={1000}>
-        Nosotros
+        <Span>Nosotros</Span>
       </Link>
       <Link to={"trabajos"} smooth duration={1000}>
-        Trabajos
+        <Span>Trabajos</Span>
       </Link>
       <Link to={"contacto"} smooth duration={1000}>
-        Contacto
+        <Span>Contacto</Span>
       </Link>
     </Nav>
   )

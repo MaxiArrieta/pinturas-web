@@ -20,6 +20,7 @@ export const Error = styled.span`
 export const H2 = styled.h2`
   text-align: center;
   font-weight: 500;
+  font-size: 2.8rem;
   padding: 8px 0;
 `
 export const TextArea = styled.textarea`

@@ -12,7 +12,7 @@ const Fomulario = () => {
   const [mensaje, setMensaje] = useState("")
 
   // if (!email || !nombre || !telefono || !mensaje)
-  const onSubmit = async e => {
+  const onSubmit =  e => {
     e.preventDefault()
     const emailValidation = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/ //esto es para validar el email...
     const resultValidation = emailValidation.test(email)
@@ -35,7 +35,7 @@ const Fomulario = () => {
     } else if (!resultValidation) {
       alert("El email es invalido")
     } else {
-      await sendMailApi(nombre, telefono, email, mensaje)
+       sendMailApi(nombre, telefono, email, mensaje)
         .then(response => {
           if (response.code !== 200) {
             alert("Hubo un error intente mas tarde")

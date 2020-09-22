@@ -1,8 +1,9 @@
 import styled from "styled-components"
 // Le cambio el nombre a LinkGatsby
-import { Link as LinkGatsby } from "gatsby"
+import { Link as LinkScroll } from "react-scroll"
+import Headroom from "react-headroom"
 
-export const Navbar = styled.header`
+export const Navbar = styled(Headroom)`
   background: #6c3483;
   /* margin-bottom: 1.45rem; */
   justify-content: space-between;
@@ -21,7 +22,12 @@ export const Div = styled.div`
   }
 `
 
-export const Link = styled(LinkGatsby)`
+export const Link = styled(LinkScroll)`
   color: white;
   text-decoration: none;
+`
+
+export const H1 = styled.h1`
+  font-size: 3rem;
+  color: #fff;
 `

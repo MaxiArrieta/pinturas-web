@@ -1,1 +1,1 @@
-export const basePath = "https://backend-sendmail.herokuapp.com/api/";
+export const basePath = "https://backend-sendmail.herokuapp.com/api";
