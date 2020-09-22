@@ -1,6 +1,6 @@
 import { basePath } from "./config"
 
-export function sendMailApi(nombre, telefono, email, mensaje) {
+export function sendMailApi(nombre, telefono, email, mensaje, humanKey) {
   const url = `${basePath}/send-mail`;
   const params = {
     method: "POST",
@@ -8,7 +8,7 @@ export function sendMailApi(nombre, telefono, email, mensaje) {
       
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ nombre, telefono, email, mensaje }),
+    body: JSON.stringify({ nombre, telefono, email, mensaje, humanKey }),
   };
 
   return fetch(url, params)

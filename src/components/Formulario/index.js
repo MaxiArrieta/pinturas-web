@@ -1,21 +1,24 @@
 import React, { useState } from "react"
 import { Form, Input, H2, TextArea, Boton } from "./styles"
+import ReCAPTCHA from "react-google-recaptcha"
 import Toast from 'react-bootstrap/Toast'//toast para poner de feedback
 import ToastHeader from 'react-bootstrap/ToastHeader'//toast para poner de feedback
 import ToastBody from 'react-bootstrap/ToastBody'//toast para poner de feedback
 import {sendMailApi} from '../../api/sendmail';//api para enviar el mail
+
 
 const Fomulario = () => {
   const [nombre, setNombre] = useState("")
   const [telefono, setTelefono] = useState("")
   const [email, setEmail] = useState("")
   const [mensaje, setMensaje] = useState("")
+  const [humanKey, setHumanKey] = useState("");
 
   // if (!email || !nombre || !telefono || !mensaje)
   const onSubmit =  e => {
     e.preventDefault()
     const emailValidation = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/ //esto es para validar el email...
-    const resultValidation = emailValidation.test(email)
+    const resultValidation = emailValidation.test(email);
 
     
     // El .trim() lo que hace es quitar todos los espacios y si es vacio
@@ -35,7 +38,7 @@ const Fomulario = () => {
     } else if (!resultValidation) {
       alert("El email es invalido")
     } else {
-       sendMailApi(nombre, telefono, email, mensaje)
+       sendMailApi(nombre, telefono, email, mensaje , humanKey)
         .then(response => {
           if (response.code !== 200) {
             alert("Hubo un error intente mas tarde")
@@ -45,6 +48,7 @@ const Fomulario = () => {
             console.log(response.message)
             //aca hay que ponerle algun mensaje para que lo visualice el cliente
             // reiniciar formulario
+            setHumanKey("")//INTENTE RESETEAR EL VALOR DE HUMANKEY, PARA VER SI CAMBIA EL VALOR PERO NO, SEGURAMENTE PORQUE FALTA DISOLVERLO O ALGO ASI
             setNombre("")
             setTelefono("")
             setEmail("")
@@ -108,12 +112,13 @@ const Fomulario = () => {
               value={mensaje}
               onChange={e => setMensaje(e.target.value)}
             />
-            {/* </div>
-          <div
-            class="g-recaptcha"
-            data-sitekey={"6Ldeh74ZAAAAAErI_nwbzt_shHhyE1B4B_A407EF"}
-          ></div>
-          <div> */}
+           </div>
+                <ReCAPTCHA 
+                  sitekey="6Le3O88ZAAAAAAguYfEw8h7Hwk_edmN1XbMSQ4U2" 
+                  onChange={e=> setHumanKey(e)} />
+                  {/*Lo que falta es resetear el Captcha, una vez que se envia el mail */}
+                {/* Lo que quiero hacer es que este ReCAPTCHA Le mande los datos de respuesta al backend*/}
+            <div> 
             <Boton type="submit" value="Enviar" />
           </div>
         </Form>
