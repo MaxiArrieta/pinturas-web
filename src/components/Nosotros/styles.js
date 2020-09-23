@@ -21,6 +21,7 @@ export const TextoImagen = styled.div`
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
+    width: 80%;
     @media (min-width: 768px) {
       font-size: 1.6rem;
     }

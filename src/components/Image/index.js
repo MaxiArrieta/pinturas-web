@@ -23,9 +23,7 @@ const Image = () => {
         <TextoImagen>
           <Fade left duration={1000} delay={500} distance="30px">
             <h2>Pintor Silletero E. Benitez</h2>
-            <p>
-              Pintamos tu hogar, local , lo que sea!! todo a tu gusto!
-            </p>
+            <p>Pintamos tu hogar, local, lo que sea!! Todo a tu gusto!</p>
           </Fade>
         </TextoImagen>
       </ImageBackground>

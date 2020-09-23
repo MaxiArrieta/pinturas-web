@@ -30,4 +30,8 @@ export const Link = styled(LinkScroll)`
 export const H1 = styled.h1`
   font-size: 3rem;
   color: #fff;
+
+  span {
+    font-size: 2rem;
+  }
 `

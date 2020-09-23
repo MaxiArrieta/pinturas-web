@@ -6,15 +6,16 @@ const Header = () => (
   <Navbar
     style={{
       background: "#6c3483",
-      // justify-content: "space-between",
       padding: "1rem",
     }}
   >
     <Div>
       <Link to={"home"} smooth duration={1000}>
-        <H1>Pintor Silletero E. Benitez <p><strong>1122520371</strong></p></H1>{/*Hay que poner el nro al lado del texto y en negrita*/}
+        <H1>
+          Pintor Silletero E. Benitez <span>1122520371</span>
+        </H1>
       </Link>
-      
+
       <Navegacion />
     </Div>
   </Navbar>
