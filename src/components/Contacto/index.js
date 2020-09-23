@@ -14,29 +14,33 @@ const Contacto = () => {
           <DivGrid>
             <h2>Contactenos</h2>
             <Div>
-              <span>Direccion: </span>
+              <span>Trabajos:</span>
               <br />
-              <span>Merlo centro</span>
+              <span>Zona Oeste, Bs.As.</span>
               <br />
               <br />
               <span>Celular: </span>
               <br />
-              <span>1198765432</span>
+              <span>1122520371 (llamadas)</span>
+              <span>1138944944 (Whats App)</span>
               <br />
               <br />
               <span>Email: </span>
               <br />
-              <span>email@email.com</span>
+              <span>eladioteofiloBenitez@gmail.com</span>
               <br />
               <br />
               <span>Horarios de atencion: </span>
               <br />
-              <span>Lunes a Lunes: 00 a 00hs 24/7</span>
+              <span>Lunes a Lunes 24/7</span>
               <br />
               <br />
               <span>Formas de pago: </span>
               <br />
-              <span>Mercado Pago - Efectivo</span>
+              <span>Mercado Pago - Efectivo - Transferencia Bancaria</span>
+              <br/>
+              <br/>
+              <span>Redes Sociales</span>
             </Div>
           </DivGrid>
         </Fade>

@@ -12,8 +12,9 @@ const Header = () => (
   >
     <Div>
       <Link to={"home"} smooth duration={1000}>
-        <H1>Pinturas Pablo</H1>
+        <H1>Pintor Silletero E. Benitez <p><strong>1122520371</strong></p></H1>{/*Hay que poner el nro al lado del texto y en negrita*/}
       </Link>
+      
       <Navegacion />
     </Div>
   </Navbar>

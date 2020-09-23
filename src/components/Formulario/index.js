@@ -5,6 +5,7 @@ import Toast from 'react-bootstrap/Toast'//toast para poner de feedback
 import ToastHeader from 'react-bootstrap/ToastHeader'//toast para poner de feedback
 import ToastBody from 'react-bootstrap/ToastBody'//toast para poner de feedback
 import {sendMailApi} from '../../api/sendmail';//api para enviar el mail
+let captcha;
 
 
 const Fomulario = () => {
@@ -48,7 +49,7 @@ const Fomulario = () => {
             console.log(response.message)
             //aca hay que ponerle algun mensaje para que lo visualice el cliente
             // reiniciar formulario
-            setHumanKey("")//INTENTE RESETEAR EL VALOR DE HUMANKEY, PARA VER SI CAMBIA EL VALOR PERO NO, SEGURAMENTE PORQUE FALTA DISOLVERLO O ALGO ASI
+            captcha.reset();//INTENTE RESETEAR EL VALOR DE HUMANKEY, PARA VER SI CAMBIA EL VALOR PERO NO, SEGURAMENTE PORQUE FALTA DISOLVERLO O ALGO ASI
             setNombre("")
             setTelefono("")
             setEmail("")
@@ -115,7 +116,9 @@ const Fomulario = () => {
            </div>
                 <ReCAPTCHA 
                   sitekey="6Le3O88ZAAAAAAguYfEw8h7Hwk_edmN1XbMSQ4U2" 
-                  onChange={e=> setHumanKey(e)} />
+                  onChange={e=> setHumanKey(e)} 
+                  ref={el => { captcha = el; }}
+                  />
                   {/*Lo que falta es resetear el Captcha, una vez que se envia el mail */}
                 {/* Lo que quiero hacer es que este ReCAPTCHA Le mande los datos de respuesta al backend*/}
             <div> 
