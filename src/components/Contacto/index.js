@@ -22,7 +22,7 @@ const Contacto = () => {
               <span>Celular: </span>
               <br />
               <span>1122520371 (llamadas)</span>
-              <span>1138944944 (Whats App)</span>
+              <span>1138944944 (WhatsApp)</span>
               <br />
               <br />
               <span>Email: </span>
@@ -38,8 +38,8 @@ const Contacto = () => {
               <span>Formas de pago: </span>
               <br />
               <span>Mercado Pago - Efectivo - Transferencia Bancaria</span>
-              <br/>
-              <br/>
+              <br />
+              <br />
               <span>Redes Sociales</span>
             </Div>
           </DivGrid>
