@@ -2,6 +2,7 @@ import React from "react"
 import { Contenido, Section, Div, DivGrid } from "./styles"
 import Formulario from "../Formulario"
 import Fade from "react-reveal/Fade"
+import SocialLinks from '../SocialLinks/index'
 
 const Contacto = () => {
   return (
@@ -41,6 +42,9 @@ const Contacto = () => {
               <br />
               <br />
               <span>Redes Sociales</span>
+              <br/>
+              <SocialLinks />
+
             </Div>
           </DivGrid>
         </Fade>
