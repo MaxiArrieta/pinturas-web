@@ -1,6 +1,6 @@
 import React from "react"
 import { Navbar, Div, Link, H1 } from "./styles"
-import {RiWhatsappLine} from 'react-icons/ri'
+import { RiWhatsappLine } from "react-icons/ri"
 import Navegacion from "../Nav"
 //oscar pidio este: #00aae4
 //antes estaba este color: #6c3483
@@ -17,7 +17,7 @@ const Header = () => (
       </Link>
       <H1>
         <span>
-          <RiWhatsappLine size="2em" /> 1138944944
+          <RiWhatsappLine size="3rem" /> 1138944944
         </span>
       </H1>
 

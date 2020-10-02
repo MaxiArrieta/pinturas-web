@@ -7,13 +7,13 @@ export const TextoImagen = styled.div`
   flex: 1;
   align-items: center;
   justify-content: center;
-  h2 {
-    font-size: 3.2rem;
+  h1 {
+    font-size: 3.6rem;
     padding: 10px;
     margin: 0%;
     text-align: center;
     @media (min-width: 768px) {
-      font-size: 2.8rem;
+      font-size: 3.3rem;
     }
   }
   p {
@@ -23,7 +23,7 @@ export const TextoImagen = styled.div`
     margin-right: 10px;
     width: 80%;
     @media (min-width: 768px) {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
   }
 `

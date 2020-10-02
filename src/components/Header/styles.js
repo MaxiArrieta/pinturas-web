@@ -5,11 +5,11 @@ import Headroom from "react-headroom"
 //color que me pidio oscar: #00aae4
 //color que tenia antes:#6c3483
 export const Navbar = styled(Headroom)`
-         background: #00aae4;
-         /* margin-bottom: 1.45rem; */
-         justify-content: space-between;
-         padding: 1rem;
-       `
+  background: #00aae4;
+  /* margin-bottom: 1.45rem; */
+  justify-content: space-between;
+  padding: 1rem;
+`
 
 export const Div = styled.div`
   max-width: 1200px;

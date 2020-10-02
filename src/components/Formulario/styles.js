@@ -6,7 +6,7 @@ export const Form = styled.form`
   margin-left: 10px;
 `
 export const Input = styled.input`
-  border: 2px solid #f1c40f;
+  border: 2px solid #212f3d;
   border-radius: 3px;
   margin-bottom: 8px;
   padding: 8px 4px;
@@ -20,11 +20,12 @@ export const Error = styled.span`
 export const H2 = styled.h2`
   text-align: center;
   font-weight: 500;
+  border-color: #000;
   font-size: 2.8rem;
   padding: 8px 0;
 `
 export const TextArea = styled.textarea`
-  border: 2px solid #f1c40f;
+  border: 2px solid #212f3d;
   border-radius: 3px;
   margin-bottom: 8px;
   padding: 8px 4px;
@@ -38,7 +39,8 @@ export const Boton = styled.input`
   padding: 8px 4px;
   background-color: #f1c40f;
   width: 100%;
-  color: rgb(108, 52, 131);
+  color: #000;
+  /* rgb(108, 52, 131); */
   display: block;
   text-decoration: none;
   text-transform: uppercase;

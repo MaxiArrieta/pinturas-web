@@ -11,6 +11,17 @@ const Layout = ({ children }) => {
         <title>Pintor E. BENITEZ</title>
 
         <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
+        <link
           href="https://fonts.googleapis.com/css?family=Bitter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
           rel="stylesheet"
         />
@@ -18,11 +29,6 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,700italic,900,900italic"
           rel="stylesheet"
         />
-        {/* <script
-          src="https://www.google.com/recaptcha/api.js"
-          async
-          defer
-        ></script> */}
       </Helmet>
       <GlobalStyle />
       <Header />

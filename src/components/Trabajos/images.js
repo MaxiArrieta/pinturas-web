@@ -30,14 +30,14 @@ const Images = ({ name, titulo }) => {
   const imageFluid = image.node.childImageSharp.fluid
 
   return (
-    <DivImagen>
+    <div>
       <H2>{titulo}</H2>
       <Image
         alt={name}
         imgStyle={{ position: "relative" }}
         fluid={imageFluid}
       />
-    </DivImagen>
+    </div>
   )
 }
 

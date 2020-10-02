@@ -8,7 +8,7 @@ const Nosotros = () => {
       <section id="nosotros">
         <TextoImagen>
           <Fade top duration={1000} delay={500} distance="30px">
-            <h2>Sobre Nosotros</h2>
+            <h1>Sobre Nosotros</h1>
             <p>
               Tenemos más de 20 años de experiencia en el rubro, un amplio
               catalogo de trabajos hechos, y recomendaciones de clientes
