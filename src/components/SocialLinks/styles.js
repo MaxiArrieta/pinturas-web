@@ -13,8 +13,4 @@ export const Div=styled.div`
         padding: 5px 8px;
         border-radius: 5px;
     
-    FaFacebookSquare {
-      width: 30px;
-      height: 30px;
-    }
 `

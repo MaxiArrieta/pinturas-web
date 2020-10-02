@@ -1,11 +1,12 @@
 import styled from "styled-components"
-
+//color que me pidio oscar: #00aae4
+//color que tenia antes:rgb(108, 52, 131)
 export const Section = styled.section`
-  background-color: rgb(108, 52, 131);
-  width: 100%;
-  color: #fff;
-  padding-bottom: 20px;
-`
+         background-color: #00aae4;
+         width: 100%;
+         color: #fff;
+         padding-bottom: 20px;
+       `
 
 export const Contenido = styled.main`
   padding-top: 4rem;

@@ -2,7 +2,8 @@ import styled from "styled-components"
 // Le cambio el nombre a LinkGatsby
 import { Link as LinkScroll } from "react-scroll"
 import Headroom from "react-headroom"
-
+//color que me pidio oscar: #00aae4
+//color que tenia antes:#6c3483
 export const Navbar = styled(Headroom)`
   background: #6c3483;
   /* margin-bottom: 1.45rem; */

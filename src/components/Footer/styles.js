@@ -1,18 +1,20 @@
 import styled from "styled-components"
 import { Link as LinkScroll } from "react-scroll"
+//color que me pidio oscar: #00aae4
+//color que tenia antes:#4a235a
 
 export const Container = styled.footer`
-  width: 100%;
-  height: 150px;
-  background-color: #4a235a;
-  color: #fff;
-  padding-top: 5px;
-  /* display: grid; */
-  text-align: center;
-  p {
-    text-align: center;
-  }
-`
+         width: 100%;
+         height: 150px;
+         background-color: #00aae4;
+         color: #fff;
+         padding-top: 5px;
+         /* display: grid; */
+         text-align: center;
+         p {
+           text-align: center;
+         }
+       `
 export const Link = styled(LinkScroll)`
   color: #ffffff;
   font-size: 1.6rem;
