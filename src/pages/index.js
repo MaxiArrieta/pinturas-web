@@ -1,6 +1,6 @@
 import React from "react"
 //aca aplique los estilos de bootstrap, para que se apliquen en el proyecto
-import "bootstrap/dist/css/bootstrap.min.css"
+//import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/Layout"
 import Image from "../components/Image"
 import Nosotros from "../components/Nosotros"

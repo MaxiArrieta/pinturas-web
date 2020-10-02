@@ -13,13 +13,13 @@ const Header = () => (
   >
     <Div>
       <Link to={"home"} smooth duration={1000}>
-        <H1>
-          Pintor Silletero E. Benitez{" "}
-          <span>
-            <RiWhatsappLine size="2em" /> 1122520371
-          </span>
-        </H1>
+        <H1>Pintor Silletero E. Benitez</H1>
       </Link>
+      <H1>
+        <span>
+          <RiWhatsappLine size="2em" /> 1138944944
+        </span>
+      </H1>
 
       <Navegacion />
     </Div>
