@@ -23,7 +23,6 @@ const Contacto = () => {
               <span>Celular: </span>
               <br />
               <span>1122520371 (llamadas)</span>
-              <span>1138944944 (WhatsApp)</span>
               <br />
               <br />
               <span>Email: </span>

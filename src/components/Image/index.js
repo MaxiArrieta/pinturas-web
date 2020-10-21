@@ -23,7 +23,7 @@ const Image = () => {
         <TextoImagen>
           <Fade left duration={1000} delay={500} distance="30px">
             <h2>Pintor Silletero E. Benitez</h2>
-            <p>Pintamos tu hogar, local, lo que sea!! Todo a tu gusto!</p>
+            <p>Trabajos de pintura en interior, exterior, altura, hidrolavados y mucho más</p>
           </Fade>
         </TextoImagen>
       </ImageBackground>

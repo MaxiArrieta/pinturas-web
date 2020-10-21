@@ -1,5 +1,5 @@
 import React from "react"
-import { Navbar, Div, Link, H1 } from "./styles"
+import { Navbar, Div, Link, H1 , H2} from "./styles"
 import { RiWhatsappLine } from "react-icons/ri"
 import Navegacion from "../Nav"
 //oscar pidio este: #00aae4
@@ -15,11 +15,11 @@ const Header = () => (
       <Link to={"home"} smooth duration={1000}>
         <H1>Pintor Silletero E. Benitez</H1>
       </Link>
-      <H1>
+      <H2>
         <span>
-          <RiWhatsappLine size="3rem" /> 1138944944
+          <RiWhatsappLine size="2rem" /> 1138944944
         </span>
-      </H1>
+      </H2>
 
       <Navegacion />
     </Div>
