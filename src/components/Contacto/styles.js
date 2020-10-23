@@ -22,10 +22,12 @@ export const Contenido = styled.main`
   h2 {
     text-align: center;
     font-size: 2.8rem;
+    font-family: "Epilogue", sans-serif;
   }
   p {
     line-height: 2;
     margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
   }
 `
 export const Div = styled.div`

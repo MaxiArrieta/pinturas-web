@@ -33,4 +33,5 @@ export const Link = styled(LinkScroll)`
 export const Span = styled.span`
   color: #fff;
   text-decoration: none;
+  font-family: 'Epilogue', sans-serif;
 `

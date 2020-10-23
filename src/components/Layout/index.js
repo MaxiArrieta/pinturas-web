@@ -39,6 +39,10 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
         {/*Esto es un estilo Epilogue italic de 400 que me pidio oscar*/}
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap"
+          rel="stylesheet"
+        />{/* estilo que pidio oscar epilogue semibold 600 para h1 y h2*/}
       </Helmet>
       <GlobalStyle />
       <Header />

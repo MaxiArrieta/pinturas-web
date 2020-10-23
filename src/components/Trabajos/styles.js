@@ -21,6 +21,7 @@ export const DivImagen = styled.div`
 export const H1 = styled.h1`
   font-size: 3.2rem;
   text-align: center;
+  font-family: "Epilogue", sans-serif;
   padding: 10px;
   margin-bottom: 10px;
   /* font-size: 2rem; */
@@ -28,6 +29,7 @@ export const H1 = styled.h1`
 
 export const H2 = styled.h2`
   text-align: center;
+  font-family: "Epilogue", sans-serif;
   padding: 5px;
   /* font-size: 2rem; */
 `

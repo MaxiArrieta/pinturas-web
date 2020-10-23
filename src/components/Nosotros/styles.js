@@ -9,7 +9,7 @@ export const TextoImagen = styled.div`
          justify-content: center;
          h1 {
            font-size: 3.6rem;
-           font-family: "Poppins", sans-serif;
+           font-family: "Epilogue", sans-serif;
            padding: 10px;
            margin: 0%;
            text-align: center;
@@ -23,7 +23,7 @@ export const TextoImagen = styled.div`
            margin-left: 10px;
            margin-right: 10px;
            width: 80%;
-           font-family: "Epilogue", sans-serif;
+           font-family: "Poppins", sans-serif;
            @media (min-width: 768px) {
              font-size: 1.8rem;
            }

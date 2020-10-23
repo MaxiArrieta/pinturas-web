@@ -4,15 +4,21 @@ export const Form = styled.form`
   padding: 16px 0;
   width: 90%;
   margin-left: 10px;
+  label{
+    font-family: 'Epilogue', sans-serif;
+  }
 `
 export const Input = styled.input`
-  border: 2px solid #212f3d;
-  border-radius: 3px;
-  margin-bottom: 8px;
-  padding: 8px 4px;
-  display: block;
-  width: 100%;
-`
+         border: 2px solid #212f3d;
+         border-radius: 3px;
+         margin-bottom: 8px;
+         padding: 8px 4px;
+         display: block;
+         width: 100%;
+         ::placeholder {
+           font-family: "Poppins", sans-serif;
+         }
+       `
 export const Error = styled.span`
   font-size: 14px;
   color: red;
@@ -20,11 +26,15 @@ export const Error = styled.span`
 export const H2 = styled.h2`
   text-align: center;
   font-weight: 500;
+  font-family: "Epilogue", sans-serif;
   border-color: #000;
   font-size: 2.8rem;
   padding: 8px 0;
 `
 export const TextArea = styled.textarea`
+  ::placeholder{
+    font-family: "Poppins", sans-serif;
+  }
   border: 2px solid #212f3d;
   border-radius: 3px;
   margin-bottom: 8px;
@@ -44,6 +54,7 @@ export const Boton = styled.input`
   display: block;
   text-decoration: none;
   text-transform: uppercase;
+  font-family: 'Epilogue', sans-serif;
   font-weight: 700;
   text-align: center;
   border-radius: 20px;

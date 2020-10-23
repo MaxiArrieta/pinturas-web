@@ -77,12 +77,12 @@ const Fomulario = () => {
             />
           </div>
           <div>
-            <label htmlFor="telefono">Telefono</label>
+            <label htmlFor="telefono">Teléfono</label>
             <Input
               type="number"
               name="telefono"
               id="telefono"
-              placeholder="Ingrese su numero de Telefono"
+              placeholder="Ingrese su numero de Teléfono"
               required
               value={telefono}
               onChange={e => setTelefono(e.target.value)}

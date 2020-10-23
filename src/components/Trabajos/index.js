@@ -8,10 +8,11 @@ import { H1, Div } from "./styles"
 import Images from "./images"
 
 const Trabajos = () => {
-  const settings = {
+  let settings = {
     dots: true,
     infinite: true,
     speed: 500,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -31,7 +32,7 @@ const Trabajos = () => {
               <Images titulo="Antes" name="antes" />
             </div>
             <div>
-              <Images titulo="Despues" name="despues" />
+              <Images titulo="Después" name="despues" />
             </div>
           </Slider>
         </Fade>

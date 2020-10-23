@@ -16,6 +16,7 @@ const Contacto = () => {
             <h2>Contactenos</h2>
             <Div>
               <span>Trabajos:</span>
+              {/*me falto agregarle a cada titulo esta fuente: font-family: 'Poppins', sans-serif; */}
               <br />
               <span>Zona Oeste, Bs.As.</span>
               <br />
@@ -41,9 +42,8 @@ const Contacto = () => {
               <br />
               <br />
               <span>Redes Sociales</span>
-              <br/>
+              <br />
               <SocialLinks />
-
             </Div>
           </DivGrid>
         </Fade>
