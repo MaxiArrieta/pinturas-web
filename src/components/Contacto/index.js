@@ -2,7 +2,7 @@ import React from "react"
 import { Contenido, Section, Div, DivGrid } from "./styles"
 import Formulario from "../Formulario"
 import Fade from "react-reveal/Fade"
-import SocialLinks from '../SocialLinks/index'
+import SocialLinks from "../SocialLinks/index"
 
 const Contacto = () => {
   return (
@@ -22,13 +22,16 @@ const Contacto = () => {
               <br />
               <span>Celular: </span>
               <br />
-              <span>1122520371 (llamadas)</span>
-              <span>1138944944 (WhatsApp)</span>
+              <span>1122520371 - Llamadas</span>
+              <br />
+              <span>1138944944 - WhatsApp</span>
               <br />
               <br />
               <span>Email: </span>
               <br />
-              <span>eladioteofiloBenitez@gmail.com</span>
+              <a href="mailto:eladioteofiloBenitez@gmail.com">
+                eladioteofiloBenitez@gmail.com
+              </a>
               <br />
               <br />
               <span>Horarios de atencion: </span>
@@ -38,13 +41,16 @@ const Contacto = () => {
               <br />
               <span>Formas de pago: </span>
               <br />
-              <span>Mercado Pago - Efectivo - Transferencia Bancaria</span>
+              <ul>
+                <li>Mercado Pago</li>
+                <li>Efectivo</li>
+                <li>Transferencia Bancaria</li>
+              </ul>
               <br />
               <br />
               <span>Redes Sociales</span>
-              <br/>
+              <br />
               <SocialLinks />
-
             </Div>
           </DivGrid>
         </Fade>
