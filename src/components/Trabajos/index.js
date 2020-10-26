@@ -8,13 +8,16 @@ import { H1, Div } from "./styles"
 import Images from "./images"
 
 const Trabajos = () => {
-  const settings = {
-    // dots: true,
+  let settings = {
+    dots: true,
     infinite: true,
     speed: 500,
+    fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   }
   return (
     <section id="trabajos">
@@ -29,7 +32,7 @@ const Trabajos = () => {
               <Images titulo="Antes" name="antes" />
             </div>
             <div>
-              <Images titulo="Despues" name="despues" />
+              <Images titulo="Después" name="despues" />
             </div>
           </Slider>
         </Fade>
@@ -37,5 +40,28 @@ const Trabajos = () => {
     </section>
   )
 }
+//flecha 2
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "gray" }}
+      onClick={onClick}
+    />
+  )
+}
+//flecha 1
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "gray" }}
+      onClick={onClick}
+    />
+  );
+}
+
 
 export default Trabajos

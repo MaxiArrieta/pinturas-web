@@ -8,7 +8,7 @@ export const Div = styled.div`
 
   @media (min-width: 768px) {
     justify-content: center;
-    width: 60%;
+    width: 50%;
   }
 `
 export const DivImagen = styled.div`

@@ -29,6 +29,20 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,700italic,900,900italic"
           rel="stylesheet"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+          rel="stylesheet"
+        />
+        {/*Esto es un estilo poppins de 400 que me pidio oscar*/}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Epilogue:ital@1&display=swap"
+          rel="stylesheet"
+        />
+        {/*Esto es un estilo Epilogue italic de 400 que me pidio oscar*/}
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600&display=swap"
+          rel="stylesheet"
+        />{/* estilo que pidio oscar epilogue semibold 600 para h1 y h2*/}
       </Helmet>
       <GlobalStyle />
       <Header />
