@@ -1,4 +1,6 @@
+import ReCAPTCHA from "react-google-recaptcha"
 import styled from "styled-components"
+
 
 export const Form = styled.form`
   padding: 16px 0;
@@ -64,3 +66,19 @@ export const Boton = styled.input`
     color: #fff !important;
   }
 `
+export const RECaptcha = styled(ReCAPTCHA)`
+         @media (max-width: 280px) {
+           transform: scale(0.84);
+           transform-origin: 0 0;
+           #rc-imageselect {
+             transform: scale(0.84);
+             transform-origin: 0 0;
+           }
+         }
+         @media (max-width: 240px) {
+           transform: scale(0.58);
+           -webkit-transform: scale(0.58);
+           transform-origin: ;
+           -webkit-transform-origin: ;
+         }
+       `

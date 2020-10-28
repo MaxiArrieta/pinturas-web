@@ -36,5 +36,5 @@ export const Image = styled(Img)`
   width: 60%;
   margin: 0;
   display:block;
- margin:auto;
+  margin:auto;
 `

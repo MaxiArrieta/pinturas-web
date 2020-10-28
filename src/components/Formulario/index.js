@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Form, Input, H2, TextArea, Boton } from "./styles"
+import { Form, Input, H2, TextArea, Boton, RECaptcha } from "./styles"
 import ReCAPTCHA from "react-google-recaptcha"
 import Toast from "react-bootstrap/Toast" //toast para poner de feedback
 import ToastHeader from "react-bootstrap/ToastHeader" //toast para poner de feedback
@@ -112,7 +112,7 @@ const Fomulario = () => {
               onChange={e => setMensaje(e.target.value)}
             />
           </div>
-          <ReCAPTCHA
+          <RECaptcha
             sitekey="6Le3O88ZAAAAAAguYfEw8h7Hwk_edmN1XbMSQ4U2"
             onChange={e => setHumanKey(e)}
             ref={el => {
