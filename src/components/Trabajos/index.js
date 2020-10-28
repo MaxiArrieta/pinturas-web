@@ -18,6 +18,7 @@ const Trabajos = () => {
     autoplay: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    adaptiveHeight:true,
   }
   return (
     <section id="trabajos">

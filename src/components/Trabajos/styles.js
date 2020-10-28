@@ -5,7 +5,6 @@ export const Div = styled.div`
   max-width: 1200px;
   width: 95%;
   margin: 4rem auto 0 auto;
-
   @media (min-width: 768px) {
     justify-content: center;
     width: 50%;
@@ -33,7 +32,9 @@ export const H2 = styled.h2`
 `
 
 export const Image = styled(Img)`
-  height: 80%;
-  width: 100%;
+  height: 50%;
+  width: 60%;
   margin: 0;
+  display:block;
+ margin:auto;
 `
