@@ -31,16 +31,40 @@ export const Contenido = styled.main`
   }
 `
 export const Div = styled.div`
-  margin-left: 20px;
-  padding-top: 50px;
-
-  span {
-    margin-left: 15px;
-  }
-  a {
-    margin-left: 15px;
-  }
-`
+         margin-left: 20px;
+         padding-top: 50px;
+         span {
+           margin-left: 15px;
+         }
+         a {
+           margin-left: 15px;
+         }
+         @media (max-width: 320px) {
+           h2 {
+             font-size:20px;
+           }
+           a {
+             font-size: 15px;
+           }
+           span {
+             font-size: 15px;
+           }
+           li {
+             font-size: 15px;
+           }
+         }
+         @media (max-width: 250px) {
+           a {
+             font-size: 13px;
+           }
+           span {
+             font-size: 13px;
+           }
+           li {
+             font-size: 13px;
+           }
+         }
+       `
 export const DivGrid = styled.div`
   margin-top: 35px;
   margin-bottom: 35px;
