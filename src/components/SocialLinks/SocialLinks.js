@@ -6,20 +6,20 @@ export default function SocialLinks() {
     return (
       <Div>
         <a
-          href="https://www.facebook.com/ozxkr.benitez"
+          href="https://www.facebook.com/Pintor-silletero-profesional-de-edificios-EBenitez-103298451587129"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaFacebookF size="3em" />
         </a>
-
+        {/*
         <a
           href="https://www.instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram size="3em" />
-        </a>
+        </a>*/}
       </Div>
     )
 }

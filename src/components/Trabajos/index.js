@@ -30,6 +30,30 @@ const Trabajos = () => {
         <Fade left duration={1000} delay={500} distance="30px">
           <Slider {...settings}>
             <div>
+              <Images titulo="Silletero" name="4" />
+            </div>
+            <div>
+              <Images titulo="Silletero" name="3b" />
+            </div>
+            <div>
+              <Images titulo="Silletero" name="5" />
+            </div>
+            <div>
+              <Images titulo="Silletero" name="6" />
+            </div>
+            <div>
+              <Images titulo="Pintura" name="13" />
+            </div>
+            <div>
+              <Images titulo="Pintura" name="12" />
+            </div>
+            <div>
+              <Images titulo="Pintura" name="11" />
+            </div>
+            <div>
+              <Images titulo=" " name="9" />
+            </div>
+            <div>
               <Images titulo="Antes" name="antes" />
             </div>
             <div>
