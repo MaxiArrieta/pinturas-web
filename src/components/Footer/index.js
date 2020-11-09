@@ -7,7 +7,10 @@ const Footer = () => {
       <Link to={"home"} smooth duration={1000}>
         <Span>Subir</Span>
       </Link>
-      <p>Copyright © {new Date().getFullYear()} - By Pablo Emanuel Chorolque y  Maximiliano Arrieta</p>
+      <p>
+        Copyright © {new Date().getFullYear()} - By Maximiliano Arrieta y Pablo
+        Emanuel Chorolque
+      </p>
       <p>Todos los derechos reservados.</p>
     </Container>
   )

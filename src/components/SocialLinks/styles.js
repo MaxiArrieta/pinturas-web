@@ -1,16 +1,15 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
+export const Div = styled.div`
+  display: flex;
+  align-items: center;
 
-export const Div=styled.div`
+  width: 100%;
+
+  a {
     display: flex;
-    align-items: center;
-    
-    width: 100%;
-
-    a {
-        display: flex;
-        margin-right: 10px;
-        padding: 5px 8px;
-        border-radius: 5px;
-    
+    margin-right: 10px;
+    padding: 5px 8px;
+    border-radius: 5px;
+  }
 `

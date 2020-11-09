@@ -31,18 +31,18 @@ export const Link = styled(LinkScroll)`
 export const H1 = styled.h1`
   font-size: 3rem;
   color: #fff;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   span {
     font-size: 2rem;
   }
 `
 
 export const H2 = styled.h2`
-         font-size: 2rem;
-         color: #fff;
-         font-family: "Epilogue", sans-serif;
-         text-border: 2px;
-         span {
-           font-size: 2rem;
-         }
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Epilogue", sans-serif;
+  span {
+    font-size: 2rem;
+    vertical-align: text-top;
+  }
 `
