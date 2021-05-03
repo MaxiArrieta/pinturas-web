@@ -12,14 +12,13 @@ export default function SocialLinks() {
         >
           <FaFacebookF size="3em" />
         </a>
-        {/*
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/ebpinturaenaltura"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram size="3em" />
-        </a>*/}
+        </a>
       </Div>
     )
 }

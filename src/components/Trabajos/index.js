@@ -59,6 +59,57 @@ const Trabajos = () => {
             <div>
               <Images titulo="Después" name="despues" />
             </div>
+            <div>
+              <Images titulo="Antes" name="3_1" />
+            </div>
+            <div>
+              <Images titulo="Después" name="3_2" />
+            </div>
+            <div>
+              <Images titulo="Antes" name="4_1" />
+            </div>
+            <div>
+              <Images titulo="Después" name="4_2" />
+            </div>
+            <div>
+              <Images titulo="Antes" name="5_1" />
+            </div>
+            <div>
+              <Images titulo="Después" name="5_2" />
+            </div>
+            <div>
+              <Images titulo="Antes" name="6_1" />
+            </div>
+            <div>
+              <Images titulo="Después" name="6_2" />
+            </div>
+            <div>
+              <Images titulo="Antes" name="7_1" />
+            </div>
+            <div>
+              <Images titulo="Después" name="7_2" />
+            </div>
+            <div>
+              <Images titulo="Antes" name="8_1" />
+            </div>
+            <div>
+              <Images titulo="Después" name="8_2" />
+            </div>
+            <div>
+              <Images titulo=" " name="14" />
+            </div>
+            <div>
+              <Images titulo=" " name="15" />
+            </div>
+            <div>
+              <Images titulo=" " name="16" />
+            </div>
+            <div>
+              <Images titulo=" " name="17" />
+            </div>
+            <div>
+              <Images titulo=" " name="18" />
+            </div>
           </Slider>
         </Fade>
       </Div>
